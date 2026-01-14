@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(255, 248, 232);
+        }
+
+        header {
+            background-color: rgb(253, 226, 138);
+            padding: 1px;
+            text-align: center;
+            margin: -10px;
+          
+        }
+
+        header > h1 {
+            font-size: 40px;
+            background-color: rgb(255, 202, 104);
+            padding: 5px;
+            margin: 50px 250px;
+            border-radius: 2px 20px;
+            box-shadow: 5px 5px 3px 0px rgb(0 0 0 / 49%);
+        }
+
+        nav {
+            background-color: rgb(255, 202, 104);
+            padding: 7px;
+            margin: 0px;
+        }
+
+        nav > a {
+            font-size: 1.2em;
+            color:white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bolder;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+        }
+
+        nav > a::after {
+            content: "|";
+            margin-left: 25px;
+            color: white;
+            text-decoration: none;
+        } 
+
+        main {
+            background-color: white;
+            padding: 0px 10px 10px 10px;
+            margin: 0px 50px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: rgb(255, 202, 104);
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin: 10px -10px -10px -10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yellow</h1>
+        <nav>
+            <a href="Bloco 1">Bloco 1</a>
+            <a href="Bloco 2">Bloco 2</a> 
+            <a href="Bloco 3">Bloco 3</a> 
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Yellow site</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis dolores, reiciendis accusamus voluptas deserunt ratione sit esse iure labore. Facilis molestiae enim iste maxime! Praesentium aspernatur voluptas rerum dignissimos sed. Lore</p>
+
+        <section>
+            <article>
+                <h3>Bloco 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, rerum sequi quam tempora quae consectetur minima aut eveniet dolores! Excepturi accusamus est ea repudiandae ipsa eum repellat aperiam nulla nihil!</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>Bloco 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quia natus repellendus sapiente magni. Nisi porro incidunt beatae ex repellat dignissimos quia atque? Illum explicabo delectus iste odit, voluptatum ducimus!</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>Bloco 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quia natus repellendus sapiente magni. Nisi porro incidunt beatae ex repellat dignissimos quia atque? Illum explicabo delectus iste odit, voluptatum ducimus!</p>
+            </article>
+        </section>
+
+        
+    </main>
+
+    <footer>Made by me (You'll never know me)</footer>
+</body>
+</html>

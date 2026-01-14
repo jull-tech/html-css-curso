@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color:rgb(253, 249, 241);
+}
+
+h1 {
+    color: darkred;
+}
+
+#bigtittle { 
+    color:rgb(255, 255, 255);
+    background-color: rgb(17, 17, 134);
+
+}
+
+h2 {
+    color: darkblue;
+}
+
+.skyfall {
+    color: navy;
+    font-weight: bolder;
+}
+
+.fragile {
+    background-color: lightblue;
+}

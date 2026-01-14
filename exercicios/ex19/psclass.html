@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ps-class</title>
+
+    <style>
+      body {
+        background-color: rgb(247, 239, 213);
+        font-family: Arial, Helvetica, sans-serif;
+      }  
+      
+      .achex {
+        text-align: center;
+        background-color: rgb(255, 208, 0);
+        border: 2px solid rgb(189, 145, 0);
+      }
+
+      div.mapa {
+        text-align: center;
+        font-size: 2em;
+      }
+
+      span.wrong:hover {
+        color:red;
+        font-weight: 600;
+      }
+
+      span.DX:hover {
+        color:rgb(255, 208, 0);
+        font-weight: 600;
+      }
+
+      .hidden {
+        text-align: left;
+        background-color: rgb(255, 124, 37);
+        border: 2px solid rgb(221, 88, 0)
+      }
+      .d4u {
+        font-size: 1.2em;
+       
+      }
+      .d_one:hover {
+        color: orangered;
+      }
+
+      .d_one > p {
+        display: none;
+      }
+
+      .d_one:hover > p {
+                display: block;
+        color: rgb(55, 160, 61);
+        font-weight: 600;
+        background-color: rgba(155, 236, 144, 0.486);
+        width: 12%;
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Hora da Pseudo-Classes</h1>
+    <p>Mostrarei as minhas habilidades aqui do vídeo que assisti.</p>
+    
+    <h2 class="achex">Procure o X certo...</h2>
+    <p style="text-align: center;">*O X perfeito aparecerá dourado e você ganhará!*</p>
+    
+    <div class="mapa">
+        <p>
+            <span class="wrong">X</span>
+            <span class="wrong">X</span>
+            <span class="wrong">X</span>
+        </p>
+        <p>
+            <span class="wrong">X</span>
+            <span class="wrong">X</span>
+            <span class="DX">X</span>
+        </p>
+        <p>
+            <span class="wrong">X</span>
+            <span class="wrong">X</span>
+            <span class="wrong">X</span>
+        </p>
+    </div>
+ <hr>
+  <h2 class="hidden">Procure o texto escondido...</h2>
+  <div class="d4u">
+     <p>Verifique aqui</p>
+     <p>Verifique aqui</p>
+     <p>Verifique aqui</p>
+
+     <div class="d_one">
+        Verifique aqui
+        <p>frase escondida é...nada</p>
+     </div>
+     <p>Verifique aqui</p>  
+     <p>Verifique aqui</p>
+  </div>
+  
+  
+
+</body>
+</html>

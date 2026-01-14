@@ -1,0 +1,26 @@
+body {
+    font-family: FreeMono, monospace;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #2d741f;
+}
+
+p {
+    color: #000000;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a0456f;
+}

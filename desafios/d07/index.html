@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 7</title>
+</head>
+<body>
+    <h1>Desafio das <strong>Imagens Dinâmicas</strong></h1>
+    <p>Somente terei que deixar a imagem mudar de acordo com a ampliação ou dimunuição da tela do usuário!</p>
+ <p>Não vou mentir que tenho um pouco de dificuldade, porém vou dificultar ainda mais, farei 2 vezes de formas diferentes.</p>
+
+ <h2>Forma 1: Usando MAX</h2>
+ <!--Basicamente coloca o px da próxima imagem-->
+ <picture>
+    <source media="(max-width: 745px )" srcset="abracadabra/paisagem-p.png">
+    <source media="(max-width: 1220px )" srcset="abracadabra/paisagem-m.png">
+    <img src="abracadabra/paisagem-g.png" alt="nothing...">
+ </picture>
+
+ <h2>Forma 2: Usando MIN</h2>
+ <!--Basicamente coloca o px da imagem no source-->
+ <picture>
+    <source media="(min-width: 1220px )" srcset="abracadabra/paisagem-g.png">
+    <source media="(min-width:745px )" srcset="abracadabra/paisagem-m.png">
+    <img src="abracadabra/paisagem-p.png" alt="">
+ </picture>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferentes Mídias</title>
+</head>
+<body>
+    
+    <!--Imagens dinâmicas-->
+    <h1>Imagens Dinâmicas</h1>
+    <p>Aqui veremos imagens que mudam de tamnho automaticamente com o poder do HTML5.</p>
+    <h2>Imagem exemplo 1:</h2>
+<picture>
+    <source media="(max-width: 725px)" srcset="imagens/P.png" type="image/png">
+    <source media="(max-width: 1040px)" srcset="imagens/M.png" type="image/png">
+    <img src="imagens/G.png" alt="Imagem 1">
+</picture>
+    <h2>Imagem exemplo 2:</h2>
+    <picture>
+       <source media="(min-width: 660px)" srcset="imagens/Gdog.png" type="image/png">
+       <source media="(min-width: 460px)" srcset="imagens/Mdog.png" type="image/png">
+     <!-- O Pdog.png está funcionando sim, só que no pc a resolução não chega até 460px -->
+     <!--Pra saber se está funcionado entra do devtool do google, pra ver a resolução de um celular-->
+        <img src="imagens/Pdog.png" alt="chacorro">
+    </picture>
+
+    <!--Como adicionar áudios-->
+<h1>Adicionar Áudios</h1>
+    <p>Agora vou tentar adicionar um áudio, só um mesmo.</p>
+  <h2>Primeira forma:</h2>
+     <audio src="midia/Punches, Kicks, Trenches And Swords.mp3" controls></audio>
+  <h2>Segunda forma:</h2>
+    <audio controls preload="metadata">
+     <source src="midia/Punches, Kicks, Trenches And Swords.mp3" type="audio/mpeg">
+     <source src="midia/Punches, Kicks, Trenches And Swords.mp3" type="audio/ogg">
+     <a href="midia/Punches, Kicks, Trenches And Swords.mp3">Caso seu navegador não suporte o áudio</a>
+    </audio>
+
+    <!--Como adicionar vídeos hospedados dentro do site-->
+<h1>Implemantando vídeos:</h1>
+    <p>Tentarei de primeira colocar videos de 2 modos.</p>
+  <h2>Modo simples:</h2>
+     <video src="midia/animaismp4.mp4" controls width="450px" poster="imagens/Thumb.png">teste</video>
+    
+  <h2>Modo mais hard:</h2>
+    <video width="450" poster="imagens/Thumb.png" controls>
+        <source src="midia/animaismp4.mp4" type="video/mp4">
+        <source src="midia/animaiswebm.webm" type="video/webm">
+        <p>Seu navegador não conseguiu carregar o vídeo. <br>
+        Baixe o vídeo <a href="midia/animais.mp4.mp4" download="Natureza Animal" type="video/mp4"><b>AQUI</b></a>
+        </p>
+    </video>
+
+    <!--Videos hospedados em outros sites-->
+<h1>Videos hospedados em outros sites</h1>
+  <h2>Vídeos Youtube:</h2>
+    <p>Aleatório, o outro não quis funcionar (nem esse).</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nCKwUB8EVbc?si=X8bjGJ42PPIQfbip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+
+  <h2>Vídeos Vimeo:</h2>
+     <p>Animação engraçadinho de um país aleatório.</p>
+     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/120182822?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:45%;height:45%;" title="Animation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
