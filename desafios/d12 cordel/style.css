@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+:root {
+    --fonte-hd: "Shizuru";
+    --fonte-padrao: ;
+    --cor-cdl: #ffefd8; 
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+    
+}
+
+html , body {
+    background-color: #fff4e3;
+    min-height: 100%;
+}
+
+header > h1 {
+    padding-top: 20px;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+header p {
+    margin-top: 2px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;   
+}
+
+/*Cordel Css*/
+section {
+    padding: 3.5% 0%;
+    padding-left: 3%;
+    min-width: 547px;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+
+section.normal {
+    background-color: var(--cor-cdl);
+    
+}
+
+section.imagem {
+    background-color: #fadfba;
+}
+
+section.imagem p {
+    background-color: var(--cor-cdl);
+    padding: 15px;
+    width: 325px;
+}
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    height: 16px;
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;   
+}
