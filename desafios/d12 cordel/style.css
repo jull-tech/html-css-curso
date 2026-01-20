@@ -6,13 +6,12 @@
 }
 
 /*Fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sirivennela&display=swap');
 
 :root {
-    --fonte-hd: "Shizuru";
-    --fonte-padrao: ;
+    --fonte-hd: ;
+    --fonte-padrao: "Lugrasimo", cursive;
     --cor-cdl: #ffefd8; 
 }
 
@@ -21,7 +20,7 @@ header {
     color: white;
     text-align: center;
     height: 100px;
-    
+    font-family: ;
 }
 
 html , body {
@@ -29,7 +28,7 @@ html , body {
     min-height: 100%;
 }
 
-header > h1 {
+header h1 {
     padding-top: 20px;
     font-weight: 400;
     font-variant: small-caps;
@@ -56,7 +55,7 @@ section {
     min-width: 547px;
     line-height: 30px;
     font-size: 18px;
-    
+    font-family: "Sirivennela", sans-serif;
 }
 
 section.normal {
