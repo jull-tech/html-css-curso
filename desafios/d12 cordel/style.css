@@ -1,43 +1,47 @@
 @charset "UTF-8";
 
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-pd);
 }
 
-/*Fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sirivennela&display=swap');
-
+/*Configurações*/
 :root {
-    --fonte-hd: ;
-    --fonte-padrao: "Lugrasimo", cursive;
-    --cor-cdl: #ffefd8; 
+    --fonte-hd: "Barrio", system-ui;
+    --fonte-pd: "Aref Ruqaa", serif;
+
+    --cor-cdl: #fff2cb; 
+}
+
+html , body {
+    background-color: var(--cor-cdl);
+    min-width: 400px;
+    
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 100px;
-    font-family: ;
 }
 
-html , body {
-    background-color: #fff4e3;
-    min-height: 100%;
-}
-
-header h1 {
-    padding-top: 20px;
+header > h1 {
+    padding-top: 15px;
     font-weight: 400;
-    font-variant: small-caps;
+    font-family: var(--fonte-hd);
+    font-size: 50px;
 }
 
 header p {
-    margin-top: 2px;
+    padding-bottom: 15px ;
 }
-
 header a {
     color: white;
     text-decoration: none;
@@ -50,12 +54,17 @@ header a:hover {
 
 /*Cordel Css*/
 section {
-    padding: 3.5% 0%;
-    padding-left: 3%;
-    min-width: 547px;
-    line-height: 30px;
-    font-size: 18px;
-    font-family: "Sirivennela", sans-serif;
+    padding: 10vh 0%;
+    padding-left: 2vw;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-attachment: fixed;
+    
+}
+
+section > p {
+    padding-bottom: 1.1em;
 }
 
 section.normal {
@@ -64,22 +73,41 @@ section.normal {
 }
 
 section.imagem {
-    background-color: #fadfba;
+    background-color: #faebc0;
 }
 
 section.imagem p {
-    background-color: var(--cor-cdl);
-    padding: 15px;
-    width: 325px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    
 }
+
+section#img01 {
+    background-image: url("imagens/background001.jpg");    
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 0px;
+}
+
+section#img02 {
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 0px;
+}
+
 /*Footer*/
 footer {
     background-color: black;
     color: white;
-    height: 16px;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
     font-size: 15px;
+
+    
 }
 footer a {
     color: white;
