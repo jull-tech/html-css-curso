@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela-02</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 310px;
+            height: 150px;
+        }
+
+        td , th {
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: center;
+            color: rgb(255, 196, 0);
+            background-color: rgb(65, 65, 65);
+        }
+
+        table tr:hover {
+            background-color: rgb(255, 196, 0);
+            color: rgb(51, 51, 235);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>População Total:</th>
+                <th><strong>86.000.000</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
