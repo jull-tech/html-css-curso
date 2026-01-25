@@ -8,8 +8,9 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 310px;
+            width: 350px;
             height: 150px;
+            position: relative;
         }
 
         td , th {
@@ -23,25 +24,33 @@
             color: white;
         }
 
-        td.num {
-            text-align: center;
-            color: rgb(255, 196, 0);
-            background-color: rgb(65, 65, 65);
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(233, 233, 233);
         }
 
-        table tr:hover {
-            background-color: rgb(255, 196, 0);
-            color: rgb(51, 51, 235);
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            border: 1px solid black;
+        }
+
+        caption {
+            font-size: 20px;
+            padding: 6px;
         }
 
     </style>
 </head>
 <body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, quod facere neque unde aliquid nemo pariatur voluptatem molestiae excepturi magni maiores provident similique deserunt, impedit porro facilis! Pariatur, voluptatem non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum excepturi, ex fugit doloremque error consequuntur? Provident dolorem delectus doloremque eligendi labore voluptatem aut sed nihil id, quasi neque in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vero rerum numquam recusandae veniam itaque consequatur iste impedit, cum ex architecto similique labore aliquam amet optio totam iure, error molestias.</p>
+
     <table>
+        <caption>População de cidades BR</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -61,13 +70,385 @@
                 <td class="num">45.000.000</td>
             </tr>
 
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+             <tr><!--linha 1-->
+                <td>Rio de Janeiro</td>
+                <td class="num">18.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            
+
             
         </tbody>
 
         <tfoot>
             <tr>
-                <th>População Total:</th>
-                <th><strong>86.000.000</strong></th>
+                <th scope="row">População Total:</th>
+                <th scope="row"><strong>86.000.000</strong></th>
             </tr>
         </tfoot>
     </table>
