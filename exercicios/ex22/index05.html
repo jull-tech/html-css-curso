@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        tr > td , th {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: rgb(255, 110, 199);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> 
+            <col class="red">
+            <col class="pink" span="2">
+            
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>   
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
