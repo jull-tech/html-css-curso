@@ -20,8 +20,9 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="">
-        <p>Digite seu nome: <input type="text" name="Nome" id=""></p>
+    <form action="dados.php" autocomplete="off" method="post">
+        <p>Digite seu <label for="iname">nome</label>: <input type="text" name="Nome" id="iname"></p>
+
         <p><input type="submit" value="Enviar"></p>
     </form>
 
