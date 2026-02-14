@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+
+    <style>
+        div {
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="dados.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="iname">Nome:</label>
+                <input type="text" name="username" id="iname" required autocomplete="name">
+            </div>
+            <div>
+                <label for="iemail">Email:</label>
+                <input type="email" name="mail" id="iemail" required autocomplete="email">
+            </div>
+            <div>
+                <label for="idtel">Telefone/Celular:</label>
+                <input type="tel" name="tel" id="idtel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(00) 00000-00000" required autocomplete="tel">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Resetar">
+        </div>
+    </form>
+</body>
+</html>
