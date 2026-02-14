@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 2</title>
+</head>
+<body>
+    <h1>Meu segundo formulário</h1>
+    <form action="dados.php" method="post" autocomplete="on">    
+        <p><!--Caixas dos Dados-->
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" required maxlength="10" minlength="5" placeholder="Digite seu usuário" size="12" autocomplete="nickname">
+        </p>
+         <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="10" placeholder="Máx 10 caracteres" size="12" autocomplete="new-password">
+        </p>
+        
+        <p><!--botão de enviar/limpar-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
