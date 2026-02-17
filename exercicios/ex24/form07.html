@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 07:</title>
+</head>
+<body>
+    <h1>Outros elementos...</h1>
+    <form action="dados.php">
+        <label for="isel">Estado-Federativo: </label>
+        <select name="seleçao" id="isel" >
+            <option>-Selecione-</option>
+            <optgroup label="Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </optiongroup>
+
+            <optgroup label="Nordeste">
+                <option value="PE">Pernambuco</option>
+                <option value="PB">Paraíba</option>
+            </optiongroup>
+
+            <optgroup label="Sul">
+                <option value="RS">Rio grande do Sul</option>
+                <option value="PR">Paraná</option>
+            </optiongroup>
+        </select>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lprof">
+            <datalist id="lprof">
+                <option >Programador/a</option>
+                <option >Policial</option>
+                <option>Padeiro/a</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="itext">Sua Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" rows="10" cols="20"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

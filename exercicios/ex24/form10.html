@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espera que seja o último</title>
+</head>
+<body>
+    <form action="dados.php" method="post">
+        <p>
+            <label for="iano">Ano de seu nascimento:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2026" placeholder="-Escolha-" oninput="calidade()">
+        </p>
+        <p>
+            <label for="iage">Sua idade neste ano será:</label>
+            <output id="iage">0</output>
+        </p>
+        <div>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Resetar">
+        </div>
+    </form>
+
+    <script>
+        function calidade() {
+           var atual = new Date().getFullYear()
+           iage.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

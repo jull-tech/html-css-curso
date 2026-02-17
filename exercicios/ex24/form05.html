@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="dados.php" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+                <label for="ivolei">Vôlei</label>
+                    <input type="checkbox" name="volei" id="ivolei"><br>
+                <label for="ifutebol">
+                    <input type="checkbox" name="futebol" id="ifutebol">Futebol
+                </label><br> 
+                <label for="inataçao">
+                    <input type="checkbox" name="natação" id="inataçao">Natação
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Genêro</legend>
+            <label for="idfem">
+                <input type="radio" name="genero" id="idfem">Feminino
+            </label>
+            <label for="idmas">
+                <input type="radio" name="genero" id="idmas">Masculino
+            </label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
