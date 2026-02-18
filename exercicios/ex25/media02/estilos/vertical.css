@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* Estilos para VERTICAL */
+body {
+    background-image: url('../cev-portrait.jpg');
+    background-position: center bottom;
+}
