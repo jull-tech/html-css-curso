@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* Estilos TELAs */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
