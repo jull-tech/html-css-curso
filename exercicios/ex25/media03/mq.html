@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        /* Gerais */
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        h1 , p {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }       
+
+        /* Horizontal */
+        @media screen and (orientation: landscape) {
+            body {
+            background-image: url('../media03/cev-landscape.jpg');
+            background-position: left bottom;
+            }
+        }
+        
+        /* Vertical */
+        @media screen and (orientation: portrait) {
+            body {
+            background-image: url('../media03/cev-portrait.jpg');
+            background-position: center bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>A tal da Orientação...</h1>
+    <p>
+        Orientação em diferentes posições; como horizontal e vertical!
+    </p>
+</body>
+</html>
