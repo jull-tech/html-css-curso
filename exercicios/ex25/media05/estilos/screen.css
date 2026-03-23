@@ -1,15 +1,21 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    span#burger {
+    span#burguer {
         display: none;
     }
 
     nav#menu {
-        display: block;
+        display: block !important;
+        
     }
 
-    nav > ul > a {
+    nav > ul > li {
         display: inline-block;
+        font-weight: lighter;
+    }
+
+    main {
+        width: 800px;
     }
 }
