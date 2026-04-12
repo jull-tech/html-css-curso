@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div#conteiner {
+            background-color: cornflowerblue;
+            display: flex;
+        }
+
+        div#item {  
+            background-color: hotpink ;
+            border: 1px solid rgb(231, 5, 114);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .ord1 {
+            order:0;
+        }
+        .ord2 {
+            order:4 ;
+        }
+        .ord3 {
+            order:-2 ;
+        }
+        .ord4 {
+            order: -7;
+        }
+        .ord5 {
+            order: 6;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="conteiner">
+        <div id="item" class="ord1">A</div>
+        <div id="item" class="ord2">B</div>
+        <div id="item" class="ord3">C</div>
+        <div id="item" class="ord4">D</div>
+        <div id="item" class="ord5">E</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div#conteiner {
+            background-color: cornflowerblue;
+            display: flex;
+            height: 400px;
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        div#item {  
+            background-color: hotpink ;
+            border: 1px solid rgb(231, 5, 114);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ord1 {
+            transition: transform 0.5s ease;
+        }
+
+        .ord1:hover {
+            align-self: stretch ;
+            
+        }
+        .ord2:hover {
+            align-self:stretch ;
+        }
+        .ord3:hover {
+            align-self:stretch ;
+        }
+        .ord4:hover {
+            align-self: stretch;
+        }
+        .ord5:hover {
+            align-self: stretch;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="conteiner">
+        <div id="item" class="ord1">A</div>
+        <div id="item" class="ord2">B</div>
+        <div id="item" class="ord3">C</div>
+        <div id="item" class="ord4">D</div>
+        <div id="item" class="ord5">E</div>
+    </div>
+</body>
+</html>
