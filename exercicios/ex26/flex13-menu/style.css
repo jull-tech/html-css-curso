@@ -16,24 +16,56 @@ colors:
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #F2D3AC ;
+    background-color: #fff0dd ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
     width: 100vw;
-    padding: 10px;
+    padding: 5px;
     background-color: #BF4E24 ;
     margin-bottom: 10px ;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 header > h1 {
     color: white;
-    border: 1px solid white 
+    border: 1px solid white ;
+    flex: 0 0 300px;
+
+}
+
+header > nav > a {
+    color: white;
+    background-color: #963d1d;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    flex: 0 0 90px;
+
+    
+}
+
+header > nav > a:hover {
+    color: white;
+    background-color: #e45c2b;
+    transition: background-color 0.2s;
 }
 
 nav {
-    border: 1px solid white 
+    border: 1px solid white;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+   
+
+    
 }
 
 main {
@@ -47,5 +79,5 @@ main {
 }
 
 main h2 {
-    color: #266573 ;
+    color: #797831 ;
 }
