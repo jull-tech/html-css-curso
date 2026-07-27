@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: white;
+}
+
+header , header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a{
+    flex-basis: 40px;
+    width: 90vw;
+}
+
+main {
+    background-color: transparent;   
+    box-shadow: none;
+}
