@@ -1,14 +1,17 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-.container {
+#container {
     display: grid;
     height: 100vh;
+    width: 100vw;
 
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px 50px 200px 50px;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-rows: 90px 50px 1fr 50px;
+    gap: 5px;
 }
 
 .topo {
